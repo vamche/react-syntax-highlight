@@ -1,4 +1,4 @@
-# react-syntax-highlight
+# react-code-highlight
 
 This react component allows you to highlight your code and make it look prettier wherever you want.
 
@@ -16,7 +16,7 @@ To use the component, In your react Application just do
 
 ```javascript
 import React from 'react';
-import SyntaxHighlight from 'react-syntax-highlight';
+import CodeHighlight from 'react-code-highlight';
 
 // import all the styles
 import "react-syntax-highlight/lib/style.css";
@@ -26,7 +26,7 @@ import "highlight.js/styles/xcode.css";
 const MyComponent = (props) => {
 
     return (
-        <SyntaxHighlight
+        <CodeHighlight
             language="javascript"
             title="Hello World in Javascript"
             description="This code will log hello world in the console."
@@ -34,7 +34,7 @@ const MyComponent = (props) => {
             {`
             	console.log("Hello World");
             `}
-        </SyntaxHighlight>
+        </CodeHighlight>
     )
 
 }
@@ -47,7 +47,7 @@ export default MyComponent;
 You can also provide additional configuration like
 
 ```javascript
-<SyntaxHighlight
+<CodeHighlight
     language="" // default: javascript
     title="" // if any
     description="" // if any
@@ -61,7 +61,7 @@ You can also provide additional configuration like
     className="" // if specified this will replace the default class name and its styles.
 >
 
-</SyntaxHighlight>
+</CodeHighlight>
 ```
 
 
